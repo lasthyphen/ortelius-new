@@ -1,0 +1,31 @@
+{
+  "networkID": 5,
+  "logDirectory": "/var/log/ortelius",
+  "metricsListenAddr": "",
+  "listenAddr": ":8080",
+  "features": [
+    "aggregate_cache",
+    "cchain_index",
+    "accumulate_balance_indexer",
+    "accumulate_balance_reader"
+  ],
+  "avalanchego": "http://avalanche:9650",
+  "nodeInstance": "default",
+  "cchainId": "t34kbq3fgdNaurCHn4aJpayuE46vh5AozKPZZG6MrjE2F7XP6",
+  "chains": {
+    "11111111111111111111111111111111LpoYY": {
+      "id": "11111111111111111111111111111111LpoYY",
+      "vmType": "pvm"
+    },
+    "N8BzztcRDHj6nNcGLbdimm6FSwE34rSVSgxhcV18TAaYSa4Q8": {
+      "id": "N8BzztcRDHj6nNcGLbdimm6FSwE34rSVSgxhcV18TAaYSa4Q8",
+      "vmType": "avm"
+    }
+  },
+  "services": {
+    "db": {
+      "dsn": "root:password@tcp(mysql:3306)/ortelius",
+      "driver": "mysql"
+    }
+  }
+}
