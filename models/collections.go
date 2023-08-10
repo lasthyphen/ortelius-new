@@ -6,7 +6,7 @@ package models
 import (
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
 )
 
 type ListMetadata struct {

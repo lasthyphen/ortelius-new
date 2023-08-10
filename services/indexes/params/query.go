@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/utils/formatting/address"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/utils/formatting/address"
 )
 
 func GetQueryInt(q url.Values, key string, defaultVal int) (val int, err error) {
@@ -98,7 +98,7 @@ func GetQueryAddress(q url.Values, key string) (*ids.ShortID, error) {
 	return &addr, nil
 }
 
-var addressPrefixes = []string{"X", "P", "C"}
+var addressPrefixes = []string{"V", "M", "U"}
 
 func AddressFromString(addrStr string) (ids.ShortID, error) {
 	for _, prefix := range addressPrefixes {

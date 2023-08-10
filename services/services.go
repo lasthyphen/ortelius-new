@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/modelsc"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/modelsc"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"github.com/gocraft/dbr/v2"
 )
 

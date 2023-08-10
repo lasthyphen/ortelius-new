@@ -8,10 +8,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/servicesctrl"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
+	"github.com/lasthyphen/ortelius-new/utils"
 )
 
 var (

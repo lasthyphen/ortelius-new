@@ -9,23 +9,23 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lasthyphen/ortelius/servicesctrl"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
 	"go.uber.org/zap"
 
-	"github.com/lasthyphen/ortelius/db"
+	"github.com/lasthyphen/ortelius-new/db"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	avlancheGoUtils "github.com/lasthyphen/dijetsnodego/utils"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	avlancheGoUtils "github.com/lasthyphen/dijetsnodesgo/utils"
 	"github.com/lasthyphen/coreth/core/types"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/modelsc"
-	"github.com/lasthyphen/ortelius/services"
-	"github.com/lasthyphen/ortelius/services/indexes/avm"
-	"github.com/lasthyphen/ortelius/services/indexes/cvm"
-	"github.com/lasthyphen/ortelius/services/indexes/pvm"
-	"github.com/lasthyphen/ortelius/stream"
-	"github.com/lasthyphen/ortelius/stream/consumers"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/modelsc"
+	"github.com/lasthyphen/ortelius-new/services"
+	"github.com/lasthyphen/ortelius-new/services/indexes/avm"
+	"github.com/lasthyphen/ortelius-new/services/indexes/cvm"
+	"github.com/lasthyphen/ortelius-new/services/indexes/pvm"
+	"github.com/lasthyphen/ortelius-new/stream"
+	"github.com/lasthyphen/ortelius-new/stream/consumers"
+	"github.com/lasthyphen/ortelius-new/utils"
 )
 
 type Replay interface {

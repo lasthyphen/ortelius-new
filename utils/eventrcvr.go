@@ -6,7 +6,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/lasthyphen/dijetsnodego/utils/logging"
+	"github.com/lasthyphen/dijetsnodesgo/utils/logging"
 	"github.com/gocraft/dbr/v2"
 	"github.com/palantir/stacktrace"
 	"go.uber.org/zap"

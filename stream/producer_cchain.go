@@ -13,15 +13,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	avalancheGoUtils "github.com/lasthyphen/dijetsnodego/utils"
-	"github.com/lasthyphen/dijetsnodego/utils/hashing"
-	"github.com/lasthyphen/dijetsnodego/utils/wrappers"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/modelsc"
-	"github.com/lasthyphen/ortelius/servicesctrl"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	avalancheGoUtils "github.com/lasthyphen/dijetsnodesgo/utils"
+	"github.com/lasthyphen/dijetsnodesgo/utils/hashing"
+	"github.com/lasthyphen/dijetsnodesgo/utils/wrappers"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/modelsc"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"go.uber.org/zap"
 )
 
@@ -76,7 +76,7 @@ func newContainerC(
 		return nil, err
 	}
 
-	cl, err := modelsc.NewClient(conf.AvalancheGO + "/ext/bc/C/rpc")
+	cl, err := modelsc.NewClient(conf.AvalancheGO + "/ext/bc/U/rpc")
 	if err != nil {
 		_ = conns.Close()
 		return nil, err
@@ -397,7 +397,7 @@ func (p *ProducerCChain) runProcessor() error {
 	}
 
 	for icnt := 0; icnt < maxWorkers; icnt++ {
-		cl, err := modelsc.NewClient(p.conf.AvalancheGO + "/ext/bc/C/rpc")
+		cl, err := modelsc.NewClient(p.conf.AvalancheGO + "/ext/bc/U/rpc")
 		if err != nil {
 			return err
 		}

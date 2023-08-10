@@ -11,12 +11,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/services/indexes/djtx"
-	"github.com/lasthyphen/ortelius/services/indexes/params"
-	"github.com/lasthyphen/ortelius/servicesctrl"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/services/indexes/djtx"
+	"github.com/lasthyphen/ortelius-new/services/indexes/params"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"github.com/gocraft/web"
 	"go.uber.org/zap"
 )
@@ -123,11 +123,11 @@ func (*Context) notFoundHandler(w web.ResponseWriter, r *web.Request) {
 }
 
 func (c *Context) cacheKeyForID(name string, id string) []string {
-	return []string{"djtx", name, params.CacheKey("id", id)}
+	return []string{"djt", name, params.CacheKey("id", id)}
 }
 
 func (c *Context) cacheKeyForParams(name string, p params.Param) []string {
-	return append([]string{"djtx", name}, p.CacheKey()...)
+	return append([]string{"djt", name}, p.CacheKey()...)
 }
 
 func newContextSetter(sc *servicesctrl.Control, networkID uint32, connections *utils.Connections, delayCache *utils.DelayCache) func(*Context, web.ResponseWriter, *web.Request, web.NextMiddlewareFunc) {

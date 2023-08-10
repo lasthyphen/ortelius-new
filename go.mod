@@ -1,4 +1,4 @@
-module github.com/lasthyphen/ortelius
+module github.com/lasthyphen/ortelius-new
 
 go 1.18
 
@@ -8,8 +8,8 @@ require (
 	github.com/gocraft/dbr/v2 v2.7.2
 	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gorilla/rpc v1.2.0
-	github.com/lasthyphen/coreth v0.16.0
-	github.com/lasthyphen/dijetsnodego v1.8.14
+	github.com/lasthyphen/coreth v0.22.0
+	github.com/lasthyphen/dijetsnodesgo v0.1.3
 	github.com/neilotoole/errgroup v0.1.6
 	github.com/palantir/stacktrace v0.0.0-20161112013806-78658fd2d177
 	github.com/prometheus/client_golang v1.13.0
@@ -64,7 +64,7 @@ require (
 	github.com/jessevdk/go-flags v1.5.0 // indirect
 	github.com/jrick/logrotate v1.0.0 // indirect
 	github.com/kkdai/bstream v1.0.0 // indirect
-	github.com/lasthyphen/djiets-ledger-go v0.0.19 // indirect
+	github.com/lasthyphen/djiets-ledger-go v0.0.21 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect

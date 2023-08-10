@@ -3,7 +3,7 @@ package djtx
 import (
 	"math/big"
 
-	"github.com/lasthyphen/ortelius/models"
+	"github.com/lasthyphen/ortelius-new/models"
 )
 
 func addAssetInfoMap(assets map[models.StringID]models.AssetInfo, assets2 map[models.StringID]models.AssetInfo) map[models.StringID]models.AssetInfo {

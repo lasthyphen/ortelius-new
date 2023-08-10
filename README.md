@@ -21,8 +21,8 @@ https://docs.docker.com/compose/install/
 The easiest way to get started is to try out the standalone mode.
 
 ```shell script
-git clone https://github.com/lasthyphen/ortelius.git $GOPATH/github.com/lasthyphen/ortelius
-cd $GOPATH/github.com/lasthyphen/ortelius
+git clone https://github.com/lasthyphen/ortelius-new.git $GOPATH/github.com/lasthyphen/ortelius-new
+cd $GOPATH/github.com/lasthyphen/ortelius-new
 make dev_env_start
 make standalone_run
 ```

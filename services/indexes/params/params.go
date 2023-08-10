@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
 	"github.com/gocraft/dbr/v2"
 )
 

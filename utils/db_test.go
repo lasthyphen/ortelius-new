@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lasthyphen/ortelius/cfg"
+	"github.com/lasthyphen/ortelius-new/cfg"
 )
 
 func TestParse(t *testing.T) {

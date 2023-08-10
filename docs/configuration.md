@@ -1,3 +1,3 @@
 # Ortelius Configuration
 
-[configuration](https://github.com/lasthyphen/ortelius/blob/master/docker/config.json)
+[configuration](https://github.com/lasthyphen/ortelius-new/blob/master/docker/config.json)

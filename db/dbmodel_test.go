@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lasthyphen/ortelius/models"
+	"github.com/lasthyphen/ortelius-new/models"
 	"github.com/gocraft/dbr/v2"
 )
 

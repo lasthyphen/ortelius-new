@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/lasthyphen/ortelius/cfg"
+	"github.com/lasthyphen/ortelius-new/cfg"
 )
 
 const (

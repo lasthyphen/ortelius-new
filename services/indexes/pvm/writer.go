@@ -11,28 +11,28 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/api/metrics"
-	"github.com/lasthyphen/dijetsnodego/genesis"
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/snow"
-	"github.com/lasthyphen/dijetsnodego/utils/constants"
-	"github.com/lasthyphen/dijetsnodego/utils/hashing"
-	"github.com/lasthyphen/dijetsnodego/utils/logging"
-	"github.com/lasthyphen/dijetsnodego/utils/wrappers"
-	"github.com/lasthyphen/dijetsnodego/vms/components/djtx"
-	"github.com/lasthyphen/dijetsnodego/vms/components/verify"
-	"github.com/lasthyphen/dijetsnodego/vms/platformvm/blocks"
-	p_genesis "github.com/lasthyphen/dijetsnodego/vms/platformvm/genesis"
-	"github.com/lasthyphen/dijetsnodego/vms/platformvm/txs"
-	"github.com/lasthyphen/dijetsnodego/vms/platformvm/validator"
-	"github.com/lasthyphen/dijetsnodego/vms/proposervm/block"
-	"github.com/lasthyphen/dijetsnodego/vms/secp256k1fx"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/services"
-	djtxIndexer "github.com/lasthyphen/ortelius/services/indexes/djtx"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/dijetsnodesgo/api/metrics"
+	"github.com/lasthyphen/dijetsnodesgo/genesis"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/snow"
+	"github.com/lasthyphen/dijetsnodesgo/utils/constants"
+	"github.com/lasthyphen/dijetsnodesgo/utils/hashing"
+	"github.com/lasthyphen/dijetsnodesgo/utils/logging"
+	"github.com/lasthyphen/dijetsnodesgo/utils/wrappers"
+	"github.com/lasthyphen/dijetsnodesgo/vms/components/djtx"
+	"github.com/lasthyphen/dijetsnodesgo/vms/components/verify"
+	"github.com/lasthyphen/dijetsnodesgo/vms/platformvm/blocks"
+	p_genesis "github.com/lasthyphen/dijetsnodesgo/vms/platformvm/genesis"
+	"github.com/lasthyphen/dijetsnodesgo/vms/platformvm/txs"
+	"github.com/lasthyphen/dijetsnodesgo/vms/platformvm/validator"
+	"github.com/lasthyphen/dijetsnodesgo/vms/proposervm/block"
+	"github.com/lasthyphen/dijetsnodesgo/vms/secp256k1fx"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/services"
+	djtxIndexer "github.com/lasthyphen/ortelius-new/services/indexes/djtx"
+	"github.com/lasthyphen/ortelius-new/utils"
 )
 
 var (
@@ -63,7 +63,7 @@ func NewWriter(networkID uint32, chainID string) (*Writer, error) {
 	if err != nil {
 		return nil, err
 	}
-	if err = bcLookup.Alias(id, "P"); err != nil {
+	if err = bcLookup.Alias(id, "M"); err != nil {
 		return nil, err
 	}
 

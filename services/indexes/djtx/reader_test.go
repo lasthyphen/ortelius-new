@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/utils/logging"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/services"
-	"github.com/lasthyphen/ortelius/services/indexes/params"
-	"github.com/lasthyphen/ortelius/servicesctrl"
+	"github.com/lasthyphen/dijetsnodesgo/utils/logging"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/services"
+	"github.com/lasthyphen/ortelius-new/services/indexes/params"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
 )
 
 func TestCollectInsAndOuts(t *testing.T) {

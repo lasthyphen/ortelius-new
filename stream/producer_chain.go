@@ -10,14 +10,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/indexer"
-	"github.com/lasthyphen/dijetsnodego/utils/hashing"
-	"github.com/lasthyphen/dijetsnodego/utils/wrappers"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/servicesctrl"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/indexer"
+	"github.com/lasthyphen/dijetsnodesgo/utils/hashing"
+	"github.com/lasthyphen/dijetsnodesgo/utils/wrappers"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"go.uber.org/zap"
 )
 
@@ -59,11 +59,11 @@ const (
 func (t IndexedChain) String() string {
 	switch t {
 	case IndexXChain:
-		return "X"
+		return "V"
 	case IndexPChain:
-		return "P"
+		return "M"
 	case IndexCChain:
-		return "C"
+		return "U"
 	}
 	// Should never happen
 	return typeUnknown

@@ -3,7 +3,7 @@ package djtx
 import (
 	"testing"
 
-	"github.com/lasthyphen/ortelius/models"
+	"github.com/lasthyphen/ortelius-new/models"
 )
 
 func TestReaderAggregate(t *testing.T) {

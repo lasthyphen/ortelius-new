@@ -4,10 +4,10 @@
 package utils
 
 import (
-	"github.com/lasthyphen/dijetsnodego/genesis"
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/utils/constants"
-	"github.com/lasthyphen/dijetsnodego/vms/platformvm/txs"
+	"github.com/lasthyphen/dijetsnodesgo/genesis"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/utils/constants"
+	"github.com/lasthyphen/dijetsnodesgo/vms/platformvm/txs"
 )
 
 type GenesisContainer struct {

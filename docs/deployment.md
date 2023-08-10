@@ -38,7 +38,7 @@ https://docs.docker.com/engine/install/linux-postinstall/
 
 # Clone the repo
 ```
-# git clone https://github.com/lasthyphen/ortelius
+# git clone https://github.com/lasthyphen/ortelius-new
 # cd ortelius
 ```
 
@@ -56,7 +56,7 @@ https://docs.docker.com/engine/install/linux-postinstall/
 git fetch --all
 git checkout tags/{tag-id}
 ```
-*note* [ortelius tags](https://github.com/lasthyphen/ortelius/tags)
+*note* [ortelius tags](https://github.com/lasthyphen/ortelius-new/tags)
 ```
 # make production_start
 ```
@@ -145,19 +145,19 @@ Ortelius requires an updated mysql compatible DB.  This will work with aurora in
 ## *optional* mysql docker container -- adjust as necessary
 [dockerhub mysql](https://hub.docker.com/_/mysql)
 ```
-docker run --volume .../github.com/lasthyphen/ortelius/docker/my.cnf:/etc/mysql/my.cnf --network host -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ortelius mysql:8.0.26
+docker run --volume .../github.com/lasthyphen/ortelius-new/docker/my.cnf:/etc/mysql/my.cnf --network host -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ortelius mysql:8.0.26
 ```
-The standard mysql defaults can cause issues, please configure the customizations [here](https://github.com/lasthyphen/ortelius/blob/master/docker/my.cnf)
+The standard mysql defaults can cause issues, please configure the customizations [here](https://github.com/lasthyphen/ortelius-new/blob/master/docker/my.cnf)
 
 ## run migrations -- *required* for all ortelius updates.
 [dockerhub migrate](https://hub.docker.com/r/migrate/migrate)
 ```
-docker run --volume .../github.com/lasthyphen/ortelius/services/db/migrations:/migrations --network host "migrate/migrate:v4.14.1"  -path=/migrations/ -database "mysql://root:password@tcp(mysql:3306)/ortelius" up
+docker run --volume .../github.com/lasthyphen/ortelius-new/services/db/migrations:/migrations --network host "migrate/migrate:v4.14.1"  -path=/migrations/ -database "mysql://root:password@tcp(mysql:3306)/ortelius" up
 ```
 Update the docker params as needed to match the user/password/host/database as appropriate.
 
 ## update ortelius configs
-Update [config](https://github.com/lasthyphen/ortelius/blob/master/docker/config.json) with the correct dsn in your local github repo.
+Update [config](https://github.com/lasthyphen/ortelius-new/blob/master/docker/config.json) with the correct dsn in your local github repo.
 
 
 # Customized setup
@@ -194,7 +194,7 @@ Example: `docker run --rm avaplatform/ortelius --help`
 
 ## Configuring Ortelius
 
-[Configuration for Ortelius](https://github.com/lasthyphen/ortelius/blob/master/docker/config.json).
+[Configuration for Ortelius](https://github.com/lasthyphen/ortelius-new/blob/master/docker/config.json).
 
 ## Running Ortelius
 
@@ -210,10 +210,10 @@ You can test your setup [API](https://docs.djtx.network/build/tools/ortelius).
 
 # Ortelius re-indexing
 
-If you performed a standard install the avalanchego database will be located at: /var/lib/ortelius/avalanche/mainnet/.
+If you performed a standard install the avalanchego database will be located at: /var/lib/ortelius/dijets/mainnet/.
 
 ```
-$ ls -altr /var/lib/ortelius/avalanche/mainnet/
+$ ls -altr /var/lib/ortelius/dijets/mainnet/
 total 12
 drwxr-xr-x 3 root root 4096 Mar 10 14:29 ..
 drwxr-xr-x 3 root root 4096 Mar 10 14:29 .
@@ -224,7 +224,7 @@ drwxr-xr-x 2 root root 4096 Mar 10 15:01 v1.4.5
 
 Stop [ortelius](#stop-ortelius)
 
-Remove the directory /var/lib/ortelius/avalanche/mainnet/
+Remove the directory /var/lib/ortelius/dijets/mainnet/
 
 Restart [ortelius](#start-ortelius).
 

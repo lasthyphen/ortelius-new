@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/lasthyphen/dijetsnodego/utils/logging"
+	"github.com/lasthyphen/dijetsnodesgo/utils/logging"
 )
 
 type SuccessResponse struct {

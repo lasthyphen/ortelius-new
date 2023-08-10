@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/lasthyphen/dijetsnodego/utils/wrappers"
-	"github.com/lasthyphen/ortelius/cfg"
+	"github.com/lasthyphen/dijetsnodesgo/utils/wrappers"
+	"github.com/lasthyphen/ortelius-new/cfg"
 )
 
 type Connections struct {

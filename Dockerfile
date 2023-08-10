@@ -1,6 +1,6 @@
 # Create base builder image
 FROM golang:1.19.1-alpine3.16 AS builder
-WORKDIR /go/src/github.com/lasthyphen/ortelius
+WORKDIR /go/src/github.com/lasthyphen/ortelius-new
 RUN apk add --no-cache alpine-sdk bash git make gcc musl-dev linux-headers git ca-certificates g++ libstdc++
 
 
@@ -17,6 +17,6 @@ WORKDIR /opt
 
 # Copy in and wire up build artifacts
 COPY --from=builder /opt/orteliusd /opt/orteliusd
-COPY --from=builder /go/src/github.com/lasthyphen/ortelius/docker/config.json /opt/config.json
-COPY --from=builder /go/src/github.com/lasthyphen/ortelius/services/db/migrations /opt/migrations
+COPY --from=builder /go/src/github.com/lasthyphen/ortelius-new/docker/config.json /opt/config.json
+COPY --from=builder /go/src/github.com/lasthyphen/ortelius-new/services/db/migrations /opt/migrations
 ENTRYPOINT ["/opt/orteliusd"]

@@ -6,15 +6,15 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/ortelius/models"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/ortelius-new/models"
 )
 
 const (
 	AVMName     = "avm"
-	XChainAlias = "x"
+	XChainAlias = "v"
 	PVMName     = "pvm"
-	PChainAlias = "p"
+	PChainAlias = "m"
 )
 
 func newIndexResponse(networkID uint32, xChainID ids.ID, djtxAssetID ids.ID) ([]byte, error) {

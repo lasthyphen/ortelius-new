@@ -8,12 +8,12 @@ import (
 	"strings"
 
 	"github.com/lasthyphen/coreth/core/types"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/modelsc"
-	"github.com/lasthyphen/ortelius/services/indexes/params"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/modelsc"
+	"github.com/lasthyphen/ortelius-new/services/indexes/params"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/gocraft/dbr/v2"
 )

@@ -11,12 +11,12 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
 
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/services/indexes/params"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/services/indexes/params"
+	"github.com/lasthyphen/ortelius-new/utils"
 )
 
 type ReaderAggregateTxList struct {

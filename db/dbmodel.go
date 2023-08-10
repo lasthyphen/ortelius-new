@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/utils/hashing"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/utils/hashing"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"github.com/gocraft/dbr/v2"
 )
 

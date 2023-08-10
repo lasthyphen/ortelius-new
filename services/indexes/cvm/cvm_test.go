@@ -8,18 +8,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/utils/logging"
-	avalancheGoDjtx "github.com/lasthyphen/dijetsnodego/vms/components/djtx"
-	"github.com/lasthyphen/dijetsnodego/vms/secp256k1fx"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/utils/logging"
+	avalancheGoDjtx "github.com/lasthyphen/dijetsnodesgo/vms/components/djtx"
+	"github.com/lasthyphen/dijetsnodesgo/vms/secp256k1fx"
 	"github.com/lasthyphen/coreth/core/types"
 	"github.com/lasthyphen/coreth/plugin/evm"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/modelsc"
-	"github.com/lasthyphen/ortelius/services"
-	"github.com/lasthyphen/ortelius/servicesctrl"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/modelsc"
+	"github.com/lasthyphen/ortelius-new/services"
+	"github.com/lasthyphen/ortelius-new/servicesctrl"
+	"github.com/lasthyphen/ortelius-new/utils"
 )
 
 var (

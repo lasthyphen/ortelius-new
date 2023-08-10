@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
 	"github.com/gocraft/dbr/v2"
 )
 

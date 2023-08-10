@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/services/indexes/params"
-	"github.com/lasthyphen/ortelius/utils"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/services/indexes/params"
+	"github.com/lasthyphen/ortelius-new/utils"
 	"github.com/gocraft/web"
 	"go.uber.org/zap"
 )

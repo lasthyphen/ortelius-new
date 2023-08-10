@@ -10,19 +10,19 @@ import (
 
 	"github.com/palantir/stacktrace"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/dijetsnodego/utils/crypto"
-	"github.com/lasthyphen/dijetsnodego/utils/formatting/address"
-	"github.com/lasthyphen/dijetsnodego/utils/math"
-	"github.com/lasthyphen/dijetsnodego/vms/components/djtx"
-	"github.com/lasthyphen/dijetsnodego/vms/components/verify"
-	"github.com/lasthyphen/dijetsnodego/vms/nftfx"
-	"github.com/lasthyphen/dijetsnodego/vms/platformvm/stakeable"
-	"github.com/lasthyphen/dijetsnodego/vms/secp256k1fx"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/services"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/dijetsnodesgo/utils/crypto"
+	"github.com/lasthyphen/dijetsnodesgo/utils/formatting/address"
+	"github.com/lasthyphen/dijetsnodesgo/utils/math"
+	"github.com/lasthyphen/dijetsnodesgo/vms/components/djtx"
+	"github.com/lasthyphen/dijetsnodesgo/vms/components/verify"
+	"github.com/lasthyphen/dijetsnodesgo/vms/nftfx"
+	"github.com/lasthyphen/dijetsnodesgo/vms/platformvm/stakeable"
+	"github.com/lasthyphen/dijetsnodesgo/vms/secp256k1fx"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/services"
 )
 
 var (

@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lasthyphen/ortelius/cfg"
+	"github.com/lasthyphen/ortelius-new/cfg"
 	"github.com/gocraft/dbr/v2"
 	"github.com/gocraft/dbr/v2/dialect"
 )

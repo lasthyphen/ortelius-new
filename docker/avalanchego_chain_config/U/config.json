@@ -1,0 +1,9 @@
+{
+  "rpc-gas-cap": 2500000000,
+  "api-max-blocks-per-request": 0,
+  "rpc-tx-fee-cap": 100,
+  "log-level": "info",
+  "pruning-enabled": false,
+  "api-max-duration": 0,
+  "eth-apis": ["net", "web3", "internal-eth", "internal-blockchain", "internal-transaction", "eth", "eth-filter", "debug", "debug-tracer", "internal-debug", "internal-tx-pool"]
+}

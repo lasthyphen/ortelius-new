@@ -7,11 +7,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/lasthyphen/dijetsnodego/ids"
-	"github.com/lasthyphen/ortelius/cfg"
-	"github.com/lasthyphen/ortelius/db"
-	"github.com/lasthyphen/ortelius/models"
-	"github.com/lasthyphen/ortelius/services/indexes/params"
+	"github.com/lasthyphen/dijetsnodesgo/ids"
+	"github.com/lasthyphen/ortelius-new/cfg"
+	"github.com/lasthyphen/ortelius-new/db"
+	"github.com/lasthyphen/ortelius-new/models"
+	"github.com/lasthyphen/ortelius-new/services/indexes/params"
 	"github.com/gocraft/dbr/v2"
 )
 
