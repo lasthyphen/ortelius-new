@@ -123,11 +123,11 @@ func (*Context) notFoundHandler(w web.ResponseWriter, r *web.Request) {
 }
 
 func (c *Context) cacheKeyForID(name string, id string) []string {
-	return []string{"djt", name, params.CacheKey("id", id)}
+	return []string{"djtx", name, params.CacheKey("id", id)}
 }
 
 func (c *Context) cacheKeyForParams(name string, p params.Param) []string {
-	return append([]string{"djt", name}, p.CacheKey()...)
+	return append([]string{"djtx", name}, p.CacheKey()...)
 }
 
 func newContextSetter(sc *servicesctrl.Control, networkID uint32, connections *utils.Connections, delayCache *utils.DelayCache) func(*Context, web.ResponseWriter, *web.Request, web.NextMiddlewareFunc) {

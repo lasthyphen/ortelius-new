@@ -201,8 +201,8 @@ Example: `docker run --rm avaplatform/ortelius --help`
 Ortelius is a collection of services. The full stack consists of the Indexer, and API which can all be started from the single binary:
 
 ```
-ortelius stream indexer -c path/to/config.json
-ortelius api -c path/to/config.json
+sudo ./orteliusd stream indexer -c ../docker/config.json
+sudo ./orteliusd api -c ../docker/config.json
 ```
 
 As Avalanche.go bootstraps the Producer will send all events to DB, the indexer will index, and the API will make them available. 
